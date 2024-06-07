@@ -1,1 +1,1 @@
-C:\Users\morel\source\repos\dwazeroczteryosiem\dwazeroczteryosiem.csproj;x64
+C:\Users\morel\source\repos\DwaCzteroZeryOsiem\DwaCzteroZeryOsiem.csproj;x64

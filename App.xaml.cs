@@ -1,4 +1,4 @@
-﻿namespace dwazeroczteryosiem
+﻿namespace DwaCzteroZeryOsiem
 {
     public partial class App : Application
     {

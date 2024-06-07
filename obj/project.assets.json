@@ -32924,11 +32924,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\morel\\source\\repos\\dwazeroczteryosiem\\dwazeroczteryosiem.csproj",
-      "projectName": "dwazeroczteryosiem",
-      "projectPath": "C:\\Users\\morel\\source\\repos\\dwazeroczteryosiem\\dwazeroczteryosiem.csproj",
+      "projectUniqueName": "C:\\Users\\morel\\source\\repos\\DwaCzteroZeryOsiem\\DwaCzteroZeryOsiem.csproj",
+      "projectName": "DwaCzteroZeryOsiem",
+      "projectPath": "C:\\Users\\morel\\source\\repos\\DwaCzteroZeryOsiem\\DwaCzteroZeryOsiem.csproj",
       "packagesPath": "C:\\Users\\morel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\morel\\source\\repos\\dwazeroczteryosiem\\obj\\",
+      "outputPath": "C:\\Users\\morel\\source\\repos\\DwaCzteroZeryOsiem\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

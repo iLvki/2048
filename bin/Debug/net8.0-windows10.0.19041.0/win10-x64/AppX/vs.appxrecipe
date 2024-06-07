@@ -8,286 +8,286 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>com.companyname.dwazeroczteryosiem</PackageIdentityName>
+    <PackageIdentityName>com.companyname.dwaczterozeryosiem</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\morel\source\repos\dwazeroczteryosiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D9BAA6AAA2736CAD9DA30F23F47C385BC0C695C2215D1CE774E06F7972194E44</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>com.companyname.dwazeroczteryosiem_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>com.companyname.dwazeroczteryosiem_9zz4h110yvjzm!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>com.companyname.dwazeroczteryosiem</RegisteredPackageID>
+    <LayoutDir>C:\Users\morel\source\repos\DwaCzteroZeryOsiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <RegisteredManifestChecksum>A645697C96757F8CA2024F50867E414C3F4BB55C769C554DE792FE0D4AF424B4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.companyname.dwaczterozeryosiem_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>com.companyname.dwaczterozeryosiem_9zz4h110yvjzm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>com.companyname.dwaczterozeryosiem</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=User Name</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\morel\source\repos\dwazeroczteryosiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-30T18:43:41.394</Modified>
+      <Modified>2024-06-06T18:58:33.907</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-05-30T18:34:12.859</Modified>
+      <Modified>2024-06-06T15:01:52.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\dwazeroczteryosiem.runtimeconfig.json">
-      <PackagePath>dwazeroczteryosiem.runtimeconfig.json</PackagePath>
-      <Modified>2024-05-30T18:34:12.650</Modified>
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\DwaCzteroZeryOsiem.runtimeconfig.json">
+      <PackagePath>DwaCzteroZeryOsiem.runtimeconfig.json</PackagePath>
+      <Modified>2024-06-06T15:01:52.081</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\dwazeroczteryosiem.dll">
-      <PackagePath>dwazeroczteryosiem.dll</PackagePath>
-      <Modified>2024-05-30T18:43:41.191</Modified>
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\DwaCzteroZeryOsiem.dll">
+      <PackagePath>DwaCzteroZeryOsiem.dll</PackagePath>
+      <Modified>2024-06-06T18:58:33.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
-      <PackagePath>dwazeroczteryosiem.exe</PackagePath>
-      <Modified>2024-05-30T18:43:41.196</Modified>
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+      <PackagePath>DwaCzteroZeryOsiem.exe</PackagePath>
+      <Modified>2024-06-06T18:58:33.710</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-05-30T18:32:31.631</Modified>
+      <Modified>2024-06-06T14:55:39.600</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.036</Modified>
+      <Modified>2024-06-06T14:55:46.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.048</Modified>
+      <Modified>2024-06-06T14:55:46.694</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.067</Modified>
+      <Modified>2024-06-06T14:55:46.710</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.101</Modified>
+      <Modified>2024-06-06T14:55:46.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.206</Modified>
+      <Modified>2024-06-06T14:55:46.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-05-30T18:32:31.626</Modified>
+      <Modified>2024-06-06T14:55:39.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-05-30T18:32:31.627</Modified>
+      <Modified>2024-06-06T14:55:39.595</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-05-30T18:32:45.652</Modified>
+      <Modified>2024-06-06T14:55:46.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.989</Modified>
+      <Modified>2024-06-06T14:55:47.243</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:46.004</Modified>
+      <Modified>2024-06-06T14:55:47.260</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:46.020</Modified>
+      <Modified>2024-06-06T14:55:47.275</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:46.043</Modified>
+      <Modified>2024-06-06T14:55:47.297</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:46.130</Modified>
+      <Modified>2024-06-06T14:55:47.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.743</Modified>
+      <Modified>2024-06-06T14:55:47.006</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.748</Modified>
+      <Modified>2024-06-06T14:55:47.011</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.768</Modified>
+      <Modified>2024-06-06T14:55:47.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.754</Modified>
+      <Modified>2024-06-06T14:55:47.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.759</Modified>
+      <Modified>2024-06-06T14:55:47.021</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.716</Modified>
+      <Modified>2024-06-06T14:55:46.973</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.721</Modified>
+      <Modified>2024-06-06T14:55:46.977</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.739</Modified>
+      <Modified>2024-06-06T14:55:47.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.725</Modified>
+      <Modified>2024-06-06T14:55:46.983</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.730</Modified>
+      <Modified>2024-06-06T14:55:46.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.659</Modified>
+      <Modified>2024-06-06T14:55:46.908</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.665</Modified>
+      <Modified>2024-06-06T14:55:46.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.670</Modified>
+      <Modified>2024-06-06T14:55:46.921</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.674</Modified>
+      <Modified>2024-06-06T14:55:46.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.683</Modified>
+      <Modified>2024-06-06T14:55:46.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.687</Modified>
+      <Modified>2024-06-06T14:55:46.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.691</Modified>
+      <Modified>2024-06-06T14:55:46.943</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.711</Modified>
+      <Modified>2024-06-06T14:55:46.967</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.696</Modified>
+      <Modified>2024-06-06T14:55:46.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.701</Modified>
+      <Modified>2024-06-06T14:55:46.955</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.839</Modified>
+      <Modified>2024-06-06T14:55:47.098</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.846</Modified>
+      <Modified>2024-06-06T14:55:47.106</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.855</Modified>
+      <Modified>2024-06-06T14:55:47.116</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.866</Modified>
+      <Modified>2024-06-06T14:55:47.127</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.887</Modified>
+      <Modified>2024-06-06T14:55:47.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.802</Modified>
+      <Modified>2024-06-06T14:55:47.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.807</Modified>
+      <Modified>2024-06-06T14:55:47.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.813</Modified>
+      <Modified>2024-06-06T14:55:47.075</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.820</Modified>
+      <Modified>2024-06-06T14:55:47.081</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.832</Modified>
+      <Modified>2024-06-06T14:55:47.093</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.772</Modified>
+      <Modified>2024-06-06T14:55:47.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.779</Modified>
+      <Modified>2024-06-06T14:55:47.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.784</Modified>
+      <Modified>2024-06-06T14:55:47.046</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.790</Modified>
+      <Modified>2024-06-06T14:55:47.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.797</Modified>
+      <Modified>2024-06-06T14:55:47.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.893</Modified>
+      <Modified>2024-06-06T14:55:47.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.905</Modified>
+      <Modified>2024-06-06T14:55:47.163</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.918</Modified>
+      <Modified>2024-06-06T14:55:47.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.935</Modified>
+      <Modified>2024-06-06T14:55:47.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.974</Modified>
+      <Modified>2024-06-06T14:55:47.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.653</Modified>
+      <Modified>2024-06-06T14:55:46.876</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.659</Modified>
+      <Modified>2024-06-06T14:55:46.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.669</Modified>
+      <Modified>2024-06-06T14:55:46.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.685</Modified>
+      <Modified>2024-06-06T14:55:46.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-05-30T18:32:45.733</Modified>
+      <Modified>2024-06-06T14:55:46.962</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\morel\source\repos\dwazeroczteryosiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\dwazeroczteryosiem.deps.json">
-      <PackagePath>dwazeroczteryosiem.deps.json</PackagePath>
-      <Modified>2024-05-30T18:34:12.539</Modified>
+    <AppxPackagedFile Include="C:\Users\morel\source\repos\DwaCzteroZeryOsiem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\DwaCzteroZeryOsiem.deps.json">
+      <PackagePath>DwaCzteroZeryOsiem.deps.json</PackagePath>
+      <Modified>2024-06-06T15:01:51.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\morel\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -1,211 +1,268 @@
-﻿using System;
-using System.Linq;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;
-
-namespace dwazeroczteryosiem
+﻿namespace DwaCzteroZeryOsiem
 {
     public partial class MainPage : ContentPage
     {
         private int[,] board = new int[4, 4];
-        private Random random = new Random();
-
+        private Random r;
+        private List<(int, int)> free;
+        private bool start;
+        private int wynik;
+        private IDispatcherTimer timer;
+        private TimeSpan czas;
+        private bool canMove;
         public MainPage()
         {
             InitializeComponent();
-            InitializeGame();
-        }
 
-        private void InitializeGame()
-        {
-            AddRandomTile();
-            AddRandomTile();
-            UpdateUI();
-        }
+            start = false;
+            board = new int[4, 4];
+            r = new Random();
+            free = new List<(int, int)>();
 
-        private void AddRandomTile()
-        {
-            var emptyCells = from r in Enumerable.Range(0, 4)
-                             from c in Enumerable.Range(0, 4)
-                             where board[r, c] == 0
-                             select new { Row = r, Col = c };
-
-            if (emptyCells.Any())
+            czas = new TimeSpan(0, 0, 0);
+            timer = Dispatcher.CreateTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += (s, e) =>
             {
-                var cell = emptyCells.ElementAt(random.Next(emptyCells.Count()));
-                board[cell.Row, cell.Col] = random.NextDouble() < 0.9 ? 2 : 4;
-            }
+                czas = czas.Add(new TimeSpan(0, 0, 1));
+                scoreAndTime.Text = $"Wynik: {wynik}   Czas: {czas.Minutes.ToString("D2")}:{czas.Seconds.ToString("D2")}";
+            };
         }
 
-        private void UpdateUI()
+        /* OBSŁUGA KLAWISZY */
+        private void KeyClicked(object sender, EventArgs e)
         {
-            Cell00.Text = board[0, 0] == 0 ? "" : board[0, 0].ToString();
-            Cell01.Text = board[0, 1] == 0 ? "" : board[0, 1].ToString();
-            Cell02.Text = board[0, 2] == 0 ? "" : board[0, 2].ToString();
-            Cell03.Text = board[0, 3] == 0 ? "" : board[0, 3].ToString();
-            Cell10.Text = board[1, 0] == 0 ? "" : board[1, 0].ToString();
-            Cell11.Text = board[1, 1] == 0 ? "" : board[1, 1].ToString();
-            Cell12.Text = board[1, 2] == 0 ? "" : board[1, 2].ToString();
-            Cell13.Text = board[1, 3] == 0 ? "" : board[1, 3].ToString();
-            Cell20.Text = board[2, 0] == 0 ? "" : board[2, 0].ToString();
-            Cell21.Text = board[2, 1] == 0 ? "" : board[2, 1].ToString();
-            Cell22.Text = board[2, 2] == 0 ? "" : board[2, 2].ToString();
-            Cell23.Text = board[2, 3] == 0 ? "" : board[2, 3].ToString();
-            Cell30.Text = board[3, 0] == 0 ? "" : board[3, 0].ToString();
-            Cell31.Text = board[3, 1] == 0 ? "" : board[3, 1].ToString();
-            Cell32.Text = board[3, 2] == 0 ? "" : board[3, 2].ToString();
-            Cell33.Text = board[3, 3] == 0 ? "" : board[3, 3].ToString();
-        }
+            string keyClicked = ((MenuFlyoutItem)sender).Text;
 
-        private void OnSwiped(object sender, SwipedEventArgs e)
-        {
-            bool boardChanged = false;
+            if (!canMove) return; 
 
-            switch (e.Direction)
+            switch (keyClicked)
             {
-                case SwipeDirection.Left:
-                    boardChanged = SlideLeft();
-                    break;
-                case SwipeDirection.Right:
-                    boardChanged = SlideRight();
-                    break;
-                case SwipeDirection.Up:
-                    boardChanged = SlideUp();
-                    break;
-                case SwipeDirection.Down:
-                    boardChanged = SlideDown();
-                    break;
+                case "Up": GoUp(); break;
+                case "Down": GoDown(); break;
+                case "Left": GoLeft(); break;
+                case "Right": GoRight(); break;
+                default: WrongKey(sender, e); break;
             }
 
-            if (boardChanged)
+            NewTile();
+            GenerateGame();
+        }
+
+        /* DODAWANIE NOWEJ LICZBY NA POLE GRY */
+        private void NewTile()
+        {
+            free.Clear();
+
+            for (int i = 0; i < 4; i++)
+                for (int j = 0; j < 4; j++)
+                    if (board[i, j] == 0) free.Add((i, j));
+
+            if (free.Count == 0)
             {
-                AddRandomTile();
-                UpdateUI();
-                if (CheckGameOver())
+                canMove = false;
+                startBtn.Text = "You lost, try again";
+                startBtn.IsVisible = true;
+                timer.Stop();
+                return;
+            }
+
+            int newPlace = r.Next(free.Count);
+            int newNumber = (r.Next(10) == 9) ? 4 : 2;
+            board[free[newPlace].Item1, free[newPlace].Item2] = newNumber;
+        }
+
+        /* ROZPOCZĘCIE GRY */
+        private void StartBtn(object sender, EventArgs e)
+        {
+            board = new int[4, 4];
+            start = true;
+            canMove = true;
+            wynik = 0;
+            r = new Random();
+            czas = new TimeSpan(0, 0, 0);
+
+            startBtn.IsVisible = false;
+
+            var rStart = (r.Next(4), r.Next(4));
+            board[rStart.Item1, rStart.Item2] = 2;
+
+            timer.Start();
+            GenerateGame();
+        }
+
+        /* GENEROWANIE PLANSZY */
+        private void GenerateGame()
+        {
+            gameBoard.Clear();
+
+            if (!start) return;
+
+            for (int i = 0; i < 4; i++)
+                for (int j = 0; j < 4; j++)
                 {
-                    DisplayAlert("Game Over", "No more moves available!", "OK");
+                    var blok = new Label
+                    {
+                        HorizontalTextAlignment = TextAlignment.Center,
+                        VerticalTextAlignment = TextAlignment.Center,
+                        HeightRequest = 100,
+                        WidthRequest = 100,
+                        Text = board[i, j].ToString()
+                    };
+
+                    switch (board[i, j])
+                    {
+                        case 0: blok.BackgroundColor = Color.FromArgb("#ffe8d2ae"); blok.Text = ""; break;
+                        case 2: blok.BackgroundColor = Color.FromArgb("#ffa3c392"); break;
+                        case 4: blok.BackgroundColor = Color.FromArgb("#ffd1c770"); break;
+                        case 8: blok.BackgroundColor = Color.FromArgb("#ffffca4e"); break;
+                        case 16: blok.BackgroundColor = Color.FromArgb("#ff99d36c"); break;
+                        case 32: blok.BackgroundColor = Color.FromArgb("#ff33db8a"); break;
+                        case 64: blok.BackgroundColor = Color.FromArgb("#ff839ab5"); break;
+                        case 128: blok.BackgroundColor = Color.FromArgb("#ffab79cb"); break;
+                        case 256: blok.BackgroundColor = Color.FromArgb("#ffd358e0"); break;
+                        case 512: blok.BackgroundColor = Color.FromArgb("#ffd767e3"); break;
+                        case 1024: blok.BackgroundColor = Color.FromArgb("#ffde70ab"); break;
+                        case 2048: blok.BackgroundColor = Color.FromArgb("#ffe47973"); break;
+                        default: blok.BackgroundColor = Color.FromArgb("#fff5aa77"); break;
+                    }
+
+                    gameBoard.Add(blok, i, j);
                 }
-            }
         }
 
-        private bool SlideLeft()
+        private void WrongKey(object s, EventArgs e)
         {
-            bool boardChanged = false;
+            DisplayAlert("Error", $"{((MenuFlyoutItem)s).Text} isn't supported", "OK");
+        }
 
-            for (int r = 0; r < 4; r++)
+        /* OBSŁUGA DANEGO KIERUNKU */
+        private void GoLeft()
+        {
+            for (int col = 0; col < 4; col++)
             {
-                int[] row = new int[4];
+                int[] tempCol = new int[4];
                 int idx = 0;
+                bool zamiana = false;
 
-                for (int c = 0; c < 4; c++)
+                for (int row = 0; row < 4; row++)
                 {
-                    if (board[r, c] != 0)
+                    if (board[row, col] != 0)
                     {
-                        row[idx++] = board[r, c];
+                        if (idx > 0 && tempCol[idx - 1] == board[row, col] && !zamiana)
+                        {
+                            tempCol[idx - 1] *= 2;
+                            wynik += tempCol[idx - 1];
+                            zamiana = true;
+                        }
+                        else
+                        {
+                            tempCol[idx] = board[row, col];
+                            idx++;
+                            zamiana = false;
+                        }
                     }
                 }
 
-                for (int c = 0; c < 3; c++)
-                {
-                    if (row[c] != 0 && row[c] == row[c + 1])
-                    {
-                        row[c] *= 2;
-                        row[c + 1] = 0;
-                    }
-                }
-
-                int[] newRow = new int[4];
-                idx = 0;
-
-                for (int c = 0; c < 4; c++)
-                {
-                    if (row[c] != 0)
-                    {
-                        newRow[idx++] = row[c];
-                    }
-                }
-
-                for (int c = 0; c < 4; c++)
-                {
-                    if (board[r, c] != newRow[c])
-                    {
-                        board[r, c] = newRow[c];
-                        boardChanged = true;
-                    }
-                }
+                for (int row = 0; row < 4; row++)
+                    board[row, col] = tempCol[row];
             }
-
-            return boardChanged;
         }
 
-        private bool SlideRight()
+        private void GoRight()
         {
-            RotateBoardRight();
-            bool boardChanged = SlideLeft();
-            RotateBoardLeft();
-            return boardChanged;
-        }
-
-        private bool SlideUp()
-        {
-            RotateBoardLeft();
-            bool boardChanged = SlideLeft();
-            RotateBoardRight();
-            return boardChanged;
-        }
-
-        private bool SlideDown()
-        {
-            RotateBoardRight();
-            RotateBoardRight();
-            bool boardChanged = SlideLeft();
-            RotateBoardLeft();
-            RotateBoardLeft();
-            return boardChanged;
-        }
-
-        private void RotateBoardRight()
-        {
-            int[,] newBoard = new int[4, 4];
-
-            for (int r = 0; r < 4; r++)
+            for (int col = 0; col < 4; col++)
             {
-                for (int c = 0; c < 4; c++)
-                {
-                    newBoard[c, 3 - r] = board[r, c];
-                }
-            }
+                int[] tempCol = new int[4];
+                int idx = 0;
+                bool zamiana = false;
 
-            board = newBoard;
+                for (int row = 3; row >= 0; row--)
+                {
+                    if (board[row, col] != 0)
+                    {
+                        if (idx > 0 && tempCol[idx - 1] == board[row, col] && !zamiana)
+                        {
+                            tempCol[idx - 1] *= 2;
+                            wynik += tempCol[idx - 1];
+                            zamiana = true;
+                        }
+                        else
+                        {
+                            tempCol[idx] = board[row, col];
+                            idx++;
+                            zamiana = false;
+                        }
+                    }
+                }
+
+                for (int row = 3; row >= 0; row--)
+                    board[row, col] = tempCol[3 - row];
+            }
         }
 
-        private void RotateBoardLeft()
+        private void GoUp()
         {
-            int[,] newBoard = new int[4, 4];
-
-            for (int r = 0; r < 4; r++)
+            for (int row = 0; row < 4; row++)
             {
-                for (int c = 0; c < 4; c++)
-                {
-                    newBoard[3 - c, r] = board[r, c];
-                }
-            }
+                int[] tempRow = new int[4];
+                int idx = 0;
+                bool zamiana = false;
 
-            board = newBoard;
+                for (int col = 0; col < 4; col++)
+                {
+                    if (board[row, col] != 0)
+                    {
+                        if (idx > 0 && tempRow[idx - 1] == board[row, col] && !zamiana)
+                        {
+                            tempRow[idx - 1] *= 2;
+                            wynik += tempRow[idx - 1];
+                            zamiana = true;
+                        }
+                        else
+                        {
+                            tempRow[idx] = board[row, col];
+                            idx++;
+                            zamiana = false;
+                        }
+                    }
+                }
+
+                for (int col = 0; col < 4; col++)
+                    board[row, col] = tempRow[col];
+            }
         }
 
-        private bool CheckGameOver()
+        private void GoDown()
         {
-            for (int r = 0; r < 4; r++)
+            for (int row = 0; row < 4; row++)
             {
-                for (int c = 0; c < 4; c++)
+                int[] tempRow = new int[4];
+                int idx = 0;
+                bool zamiana = false;
+
+                for (int col = 3; col >= 0; col--)
                 {
-                    if (board[r, c] == 0) return false;
-                    if (c < 3 && board[r, c] == board[r, c + 1]) return false;
-                    if (r < 3 && board[r, c] == board[r + 1, c]) return false;
+                    if (board[row, col] != 0)
+                    {
+                        if (idx > 0 && tempRow[idx - 1] == board[row, col] && !zamiana)
+                        {
+                            tempRow[idx - 1] *= 2;
+                            wynik += tempRow[idx - 1];
+                            zamiana = true;
+                        }
+                        else
+                        {
+                            tempRow[idx] = board[row, col];
+                            idx++;
+                            zamiana = false;
+                        }
+                    }
                 }
+
+                for (int col = 3; col >= 0; col--)
+                    board[row, col] = tempRow[3 - col];
             }
-            return true;
         }
     }
 }

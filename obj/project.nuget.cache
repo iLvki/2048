@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k6gGpLCanDw=",
+  "dgSpecHash": "gxlrcLx8eWM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\morel\\source\\repos\\dwazeroczteryosiem\\dwazeroczteryosiem.csproj",
+  "projectFilePath": "C:\\Users\\morel\\source\\repos\\DwaCzteroZeryOsiem\\DwaCzteroZeryOsiem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\morel\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\morel\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

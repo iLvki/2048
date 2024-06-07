@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="dwazeroczteryosiem.AppShell"
+    x:Class="DwaCzteroZeryOsiem.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:dwazeroczteryosiem"
+    xmlns:local="clr-namespace:DwaCzteroZeryOsiem"
     Shell.FlyoutBehavior="Disabled"
-    Title="dwazeroczteryosiem">
+    Title="DwaCzteroZeryOsiem">
 
     <ShellContent
-        Title="Home"
+        Title="2048 by Livki"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
